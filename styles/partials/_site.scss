@@ -1,0 +1,145 @@
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: $baseFont;
+    font-weight: 400;
+    position: relative;
+    h1, h2, h3, h4, ul {
+        margin: 0;
+        padding: 0
+    }
+    h1 {
+        font-size: $h1Desk;
+    }
+    h2 {
+        font-size: $h2Desk;
+        font-weight: 400;
+    }
+    h3 {
+        font-size: $h3Desk;
+        font-weight: 400;
+    }
+    h4 {
+        font-size: $h4Desk;
+        font-weight: 400;
+    }
+    p {
+        font-size: $pDesk;
+    }
+    a {
+        font-size: $aDesk;
+        text-decoration: none;
+    }
+    button {
+        font-size: $buttonDesk;
+    }
+    i {
+        font-size: $iDesk;
+    }
+    input, label, textarea {
+        font-size: $inputDesk;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    .hideElement {
+        display: none !important;
+    }
+}
+.uppercase {
+    text-transform: uppercase;
+}
+@media (max-width: $sm) {
+    html {
+        h1 {
+            font-size: $h1Mobile;
+        }
+        h2 {
+            font-size: $h2Mobile;
+        }
+        h3 {
+            font-size: $h3Mobile;
+        }
+        h4 {
+            font-size: $h4Mobile;
+        }
+        p {
+            font-size: $pMobile;
+        }
+        a {
+            font-size: $aMobile;
+        }
+        i {
+            font-size: $iMobile;
+        }
+        input, label, textarea, button {
+            font-size: $inputMobile;
+        }
+    }
+}
+@media (min-width: $sm + 1px) and (max-width: $md) {
+    html {
+        h1 {
+            font-size: $h1Mobile;
+        }
+        h2 {
+            font-size: $h2Mobile;
+        }
+        h3 {
+            font-size: $h3Mobile;
+        }
+        h4 {
+            font-size: $h4Mobile;
+        }
+        p {
+            font-size: $pMobile;
+        }
+        a {
+            font-size: $aMobile;
+        }
+        i {
+            font-size: $iMobile;
+        }
+        input, label, textarea, button {
+            font-size: $inputMobile;
+        }
+    }
+}
+@media (min-width: $md + 1px) and (max-width: $lg) {
+
+}
+@media (min-width: $lg + 1px) and (max-width: $xl) {
+    html {
+        h1 {
+            font-size: $h1Tablet;
+        }
+        h2 {
+            font-size: $h2Tablet;
+        }
+        h3 {
+            font-size: $h3Tablet;
+        }
+        h4 {
+            font-size: $h4Tablet;
+        }
+        p {
+            font-size: $pTablet;
+        }
+        a {
+            font-size: $aTablet;
+        }
+        i {
+            font-size: $iTablet;
+        }
+        input, label, textarea {
+            font-size: $inputDesk;
+        }
+    }
+}
+@media (min-width: $xl + 1px) {
+    html {
+        h1 {
+            font-size: $h1Tablet;
+        }
+    }
+}

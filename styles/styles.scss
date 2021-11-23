@@ -1,0 +1,10 @@
+// Setup and Partials
+@import "./partials/normalize";
+@import "./partials/borderbox";
+@import "./partials/clearfix";
+@import "./partials/visuallyHidden";
+@import "./partials/variables";
+@import "./partials/site";
+// Main Index Styling
+@import "./sections/header";
+@import "./sections/main"
