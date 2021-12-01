@@ -8,6 +8,7 @@ meekMittApp.hero = function() {
         contain: true,
         autoPlay: 5000,
         wrapAround: true,
+        prevNextButtons: false
     });
 };
 meekMittApp.init = function() {
