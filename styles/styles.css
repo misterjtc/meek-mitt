@@ -432,8 +432,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../../assets/jon-moore-5fIoyoKlz7A-unsplash.jpg);
-  background-size: contain;
+  background: #4e4237 url(../../assets/background-wood.jpg) center top repeat;
+  background-attachment: fixed;
 }
 
 .mainWrapper {
@@ -465,7 +465,7 @@ body {
 .mainWrapper main .heroContainer .heroOverlay {
   position: absolute;
   z-index: 9998;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(78, 66, 55, 0.3);
   top: 0;
   left: 0;
   right: 0;
@@ -501,6 +501,7 @@ body {
   text-align: center;
   margin-bottom: 20px;
   font-size: 6rem;
+  font-weight: 700;
 }
 .mainWrapper main .heroContainer .heroText .heroTextContainer h2 span {
   color: cornflowerblue;
@@ -517,6 +518,10 @@ body {
   background: cornflowerblue;
   padding: 10px 20px;
   border-radius: 15px;
+  color: white;
+}
+.mainWrapper main .heroContainer .heroText .heroTextContainer .subscribe a:hover {
+  color: #092049;
 }
 .mainWrapper main .heroContainer .heroMain {
   width: 100%;
@@ -534,11 +539,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: white;
   height: 400px;
 }
 .mainWrapper main .aboutContainer .aboutLeft {
   width: 50%;
+  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,9 +558,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -559,6 +571,7 @@ body {
 }
 .mainWrapper main .aboutContainer .aboutRight {
   width: 50%;
+  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -566,15 +579,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 35px;
 }
-.mainWrapper main .aboutContainer .aboutRight .firstBlurb:first-child {
+.mainWrapper main .aboutContainer .aboutRight .aboutBlurb .blurbHeader {
+  margin: 10px 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -582,6 +597,19 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+.mainWrapper main .aboutContainer .aboutRight .aboutBlurb .blurbHeader i {
+  height: 25px;
+}
+.mainWrapper main .aboutContainer .aboutRight .aboutBlurb .blurbHeader h3 {
+  height: 25px;
+  line-height: 25px;
+  font-weight: 700;
+  text-align: center;
+  margin-left: 15px;
+}
+.mainWrapper main .aboutContainer .aboutRight .aboutBlurb .blurbHeader h4 {
+  color: #565656;
 }
 .mainWrapper main .menu {
   width: 100%;
@@ -591,7 +619,7 @@ body {
 }
 .mainWrapper main .menu .mainDinnerContainer .dinnerBanner {
   width: 100%;
-  height: 200px;
+  height: 175px;
   position: relative;
 }
 .mainWrapper main .menu .mainDinnerContainer .dinnerBanner .dinnerBannerOverlay {
@@ -628,9 +656,44 @@ body {
   color: white;
   font-size: 5rem;
 }
-.mainWrapper main .menu .mainDinnerContainer .dinnerOneItems {
-  height: 600px;
+.mainWrapper main .menu .mainDinnerContainer .dinnerItems {
   background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.mainWrapper main .menu .mainDinnerContainer .dinnerItems .dinner {
+  width: 40%;
+  margin: 25px 0;
+}
+.mainWrapper main .menu .mainDinnerContainer .dinnerItems .dinner .dinnerMain {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mainWrapper main .menu .mainDinnerContainer .dinnerItems .dinner .dinnerMain .dinnerName {
+  width: 50%;
+}
+.mainWrapper main .menu .mainDinnerContainer .dinnerItems .dinner .dinnerMain h3 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.mainWrapper main .menu .mainDinnerContainer .dinnerItems .dinner .dinnerDetail p {
+  font-size: 1.2rem;
+  color: #565656;
 }
 .mainWrapper .heroMain .hero img {
   width: 100%;
@@ -644,4 +707,75 @@ body {
 }
 .mainWrapper .heroMain .flickity-page-dots .dot {
   background: grey;
+}
+
+footer {
+  background: #26211e;
+  height: 265px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .socialNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .socialNav div {
+  margin: 15px 25px;
+  padding: 13px 16px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.2);
+}
+footer .socialNav div a {
+  display: inline-block;
+  color: #d0c7c2;
+}
+footer .socialNav .facebook:hover {
+  background: #4267B2;
+}
+footer .socialNav .twitter:hover {
+  background: #1DA1F2;
+}
+footer .socialNav .linkedin:hover {
+  background: #2867B2;
+}
+footer .footerNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+footer .footerNav ul li a {
+  text-decoration: none;
+  color: #d0c7c2;
+}
+footer .footerNav ul li a:hover {
+  color: #534740;
+}
+footer .footerNav ul li:not(:first-child):before {
+  content: "/";
+  color: white;
+  opacity: 0.35;
+  margin: 0 15px 0 15px;
+  float: left;
+  font-size: 1.5rem;
+}
+footer .fin {
+  margin: 20px 0;
+}
+footer .fin h4 {
+  font-size: 1.5rem;
+  color: #d0c7c2;
+  font-weight: 100;
 }
