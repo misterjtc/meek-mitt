@@ -31,8 +31,13 @@ body {
             }
             .heroText {
                 position: absolute;
-                top: 35%;
-                left: 19%;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 z-index: 9999;
                 .heroTextContainer {
                     display: flex;
@@ -64,6 +69,7 @@ body {
                             padding: 10px 20px;
                             border-radius: 15px;
                             color: white;
+                            transition: color 0.3s ease-in;
                             &:hover {
                                 color: darken($linkBackground, 50%)
                             }

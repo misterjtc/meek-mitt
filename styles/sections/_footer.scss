@@ -8,26 +8,32 @@ footer {
     .socialNav {
         display: flex;
         div {
-            margin: 15px 25px;
-            padding: 13px 16px;
-            border-radius: 28px;
+            margin: 20px 25px;
+            padding: 12px 15px;
+            border-radius: 25px;
             background: rgba(255,255,255,.2);
             a {
                 display: inline-block;
                 color: #d0c7c2;
+                i {
+                    font-size: 2rem;
+                }
             }
         }
         .facebook {
+            transition: background 0.3s ease-in;
             &:hover {
                 background: #4267B2;
             }
         }
         .twitter {
+            transition: background 0.3s ease-in;
             &:hover {
                 background: #1DA1F2;
             }
         }
         .linkedin {
+            transition: background 0.3s ease-in;
             &:hover {
                 background: #2867B2;
             }
@@ -42,6 +48,7 @@ footer {
                 a{
                     text-decoration: none;
                     color: #d0c7c2;
+                    transition: color 0.3s ease-in;
                     &:hover {
                         color: darken(#d0c7c2, 50%)
                     }
@@ -60,7 +67,7 @@ footer {
         }
     }
     .fin {
-        margin: 20px 0;
+        margin: 25px 0;
         h4{
             font-size: 1.5rem;
             color: #d0c7c2;
