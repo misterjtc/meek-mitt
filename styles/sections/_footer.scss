@@ -14,9 +14,9 @@ footer {
             background: rgba(255,255,255,.2);
             a {
                 display: inline-block;
-                color: #d0c7c2;
                 i {
                     font-size: 2rem;
+                    color: #d0c7c2;
                 }
             }
         }
@@ -45,7 +45,7 @@ footer {
             list-style: none;
             li {
                 // margin: 10px 
-                a{
+                a {
                     text-decoration: none;
                     color: #d0c7c2;
                     transition: color 0.3s ease-in;
@@ -68,11 +68,29 @@ footer {
     }
     .fin {
         margin: 25px 0;
-        h4{
-            font-size: 1.5rem;
+        p{
+            // font-size: 1.5rem;
             color: #d0c7c2;
             font-weight: 100;
         }
     }
-
+}
+@media (min-width: 1px) and (max-width: $md) {
+    body .mainWrapper footer .socialNav .socialItem {
+        margin: 20px 25px;
+        padding: 10px 12px;
+        border-radius: 25px;
+        a {
+            i {
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
+@media (min-width: $sm + 1px) and (max-width: $md) {
+    .fin {
+        h4{
+            font-size: 1.2rem;
+        }
+    }
 }

@@ -10,10 +10,12 @@ body {
 }
 
 .mainWrapper {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 0 0 100px rgb(0 0 0 / 50%);
+    max-width: 1120px;
     main {
         display: flex;
         flex-direction: column;
@@ -89,16 +91,16 @@ body {
     
             }
         }
-        .aboutContainer {
+        .howtoContainer {
             display: flex;
-            flex-direction: row;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-around;
             align-items: center;
             background: white;
             height: 400px;
-            .aboutLeft {
-                width: 50%;
-                height: 90%;
+            .howtoText {
+                width: 90%;
+                height: 30%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -106,40 +108,47 @@ body {
                 padding: 35px;
                 h2 {
                     font-weight: 700;
-                    // margin: 20px 0;
+                    margin: 10px 0;
                 }
             }
-            .aboutRight {
-                width: 50%;
-                height: 90%;
+            .howtoGraphics {
+                height: 65%;
                 display: flex;
-                flex-direction: column;
                 justify-content: space-between;
-                align-items: center;
-                padding: 35px;
-                .aboutBlurb {
-                    // margin: 15px 0;
-                    .blurbHeader {
-                        margin: 10px 0;
-                        width: 100%;
-                        display: flex;
-                        flex-direction: row;
-                        i {
-                            height: 25px;
-                        }
+                align-items: flex-start;
+                width: 90%;
+                // margin-top: 35px;
+                .howtoItem {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 25%;
+                    padding-top: 40px;
+                    margin-top: 35px;
+                    .howtoItemNumber {
+                        position: absolute;
+                        top: 0px;
+                        left: 25px;
                         h3 {
-                            height: 25px;
-                            line-height: 25px;
+                            font-size: 4rem;
                             font-weight: 700;
-                            text-align: center;
-                            margin-left: 15px;
+                            color: $linkBackground;
                         }
-                        h4 {
-                            color: #565656;
+                    }
+                    .howtoIcon {
+                        margin: 15px 0;
+                        i {
+                            font-size: 8rem;
+                        }
+                    }
+                    .howtoList {
+                        h3 {
+                            text-align: center;
                         }
                     }
                 }
-
             }
         }
         .menu {
@@ -189,23 +198,29 @@ body {
                     flex-wrap: wrap;
                     justify-content: space-evenly;
                     .dinner {
-                        width: 40%;
+                        width: 45%;
                         margin: 25px 0;
                         .dinnerMain {
                             margin-bottom: 10px;
                             display: flex;
                             justify-content: space-between;
                             .dinnerName {
-                                width: 50%;
+                                width: 60%;
                             }
-                            h3 {
+                            h4 {
                                 font-weight: 700;
-                                font-size: 1.8rem;
+                                // font-size: 1.8rem;
+                            }
+                            .dinnerPrice {
+                                width: 35%;
+                                h4{
+                                    text-align: right;
+                                }
                             }
                         }
                         .dinnerDetail {
                             p {
-                                font-size: 1.2rem;
+                                // font-size: 1.2rem;
                                 color: #565656
                             }
                         }
@@ -231,4 +246,116 @@ body {
             }
         }
     }
+}
+@media (max-width: $sm) {
+    body {
+        background: #26211e;
+        .mainWrapper {
+            width: 100%;
+        }
+    } 
+
+}
+@media (min-width: 1px) and (max-width: $md) {
+    body .mainWrapper main {
+        .heroContainer .heroText .heroTextContainer {
+            h2 {
+                font-size: 4rem;
+            }
+        }
+        .howtoContainer .howtoText {
+            h3 {
+                text-align: center;
+            }
+        }
+        .howtoContainer .howtoGraphics .howtoItem {
+            .howtoItemNumber {
+                top: 10px;
+                left: 5px;
+                h3 {
+                    font-size: 2.5rem;
+                }
+            }
+            .howtoIcon i {
+                font-size: 5rem;
+            }
+            i {
+                font-size: 5rem;
+            }
+        }
+        .menu .mainDinnerContainer .dinnerBanner {
+            height: 100px;
+            .bannerText h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+@media (min-width: $sm + 1px) and (max-width: $md) {
+    body .mainWrapper {
+        width: 100%;
+        main .howtoContainer .howtoGraphics .howtoItem {
+            .howtoItemNumber {
+                h3 {
+                    font-size: 3.2rem;
+                }
+            }
+            .howtoIcon {
+                i {
+                    font-size: 6rem;
+                }
+            }
+            .howtoList {
+                h3 {
+                    // font-size: 2rem;
+                }
+            }
+        }
+        main .menu .mainDinnerContainer .dinnerBanner {
+            height: 130px;
+            .bannerText h2 {
+                font-size: 3.7rem;
+            }
+        }
+        main .heroContainer .heroText .heroTextContainer {
+            h2 {
+                font-size: 5rem;
+            }
+        }
+    }
+}
+@media (min-width: $md + 1px) and (max-width: $lg) {
+
+}
+@media (min-width: $lg + 1px) and (max-width: $xl) {
+    body .mainWrapper {
+        width: 100%;
+        main .howtoContainer .howtoGraphics .howtoItem {
+            .howtoItemNumber {
+                h3 {
+                    // font-size: 2.8rem;
+                }
+            }
+            .howtoIcon {
+                i {
+                    // font-size: 6rem;
+                }
+            }
+            .howtoList {
+                h3 {
+                    // font-size: 2rem;
+                }
+            }
+        }
+        main .menu .mainDinnerContainer .dinnerBanner {
+            height: 150px;
+            .bannerText h2 {
+                font-size: 4rem;
+            }
+        }
+    }
+
+}
+@media (min-width: $xl + 1px) {
+
 }

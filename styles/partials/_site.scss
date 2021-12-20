@@ -3,11 +3,12 @@ html {
     font-size: $baseFont;
     font-weight: 400;
     position: relative;
+    width: 100%;
     h1, h2, h3, h4, ul {
         margin: 0;
         padding: 0
     }
-    h1, h2, h3, h4, p, a {
+    h1, h2, h3, h4, p, a, i {
         color: $darkText;
     }
     h1 {

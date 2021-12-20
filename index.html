@@ -15,16 +15,26 @@
 </head>
 <body>
     <div class="mainWrapper">
-        <header>
+        <header id="home">
             <div class="logo">
                 <img src="./assets/meek_mitt_original_vectorized.svg" alt="Meek Mitt Oven logo">
             </div>
+            <div class="mobileNavButton">
+                <a href="" class="mobileLink headerMobileNavLink" onclick="return false"><i class="fas fa-bars"></i></a>
+            </div>
             <div class="nav">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Instructions</a></li>
-                    <li><a href="">Contact</a></li>
+                <ul class="deskList">
+                    <li><a href="#home" class="homeButton">Home</a></li>
+                    <li><a href="#menu" class="menuButton">Menu</a></li>
+                    <li><a href="" class="instructionButton">Instructions</a></li>
+                    <li><a href="" class="contactButton">Contact</a></li>
                 </ul>
+                <ul class="mobileList">
+                    <li><a href="#home" class="homeButton">Home</a></li>
+                    <li><a href="#menu" class="menuButton">Menu</a></li>
+                    <li><a href="" class="instructionButton">Instructions</a></li>
+                    <li><a href="" class="contactButton">Contact</a></li>
+                 </ul>
             </div>
         </header>
         <main>
@@ -49,35 +59,50 @@
                     </div>
                 </div>
             </div>
-            <div class="aboutContainer">
-                <div class="aboutLeft">
-                    <h2>We cook. So you don't have to!</h2>
-                    <div class="pickMeals"></div>
-                    <div class="sendOrder"></div>
-                    <div class="pickupOrder"></div>
+            <div class="howtoContainer">
+                <div class="howtoText">
+                    <h2>How it works</h2>
+                    <h3>Save time and enjoy delicious and nutricious meals in 3 easy steps!</h3>
                 </div>
-                <div class="aboutRight">
-                    <div class="aboutBlurb">
-                        <div class="blurbHeader">
-                            <i class="fas fa-thumbs-up"></i>
-                            <h3>locally sourced</h3>
+                <div class="howtoGraphics">
+                    <div class="pickMeals howtoItem">
+                        <div class="howtoItemNumber">
+                            <h3>1.</h3>
                         </div>
-                        <div class="blurbText">
-                            <h4>We work with several organizations to bring high-quality local products into our recipes, help Ontarians in need, and reduce food waste. Get to know some of Ontario’s best products made right in your community.</h4>
+                        <div class="howtoIcon">
+                            <i class="fas fa-list-ol"></i>
+                        </div>
+                        <div class="howtoList">
+                            <h3>
+                                Select your meals
+                            </h3>
                         </div>
                     </div>
-                    <div class="aboutBlurb">
-                        <div class="blurbHeader">
-                            <i class="fas fa-leaf"></i>
-                            <h3>made fresh everyday</h3>
+                    <div class="sendOrder howtoItem">
+                        <div class="howtoItemNumber">
+                            <h3>2.</h3>
                         </div>
-                        <div class="blurbText">
-                            <h4>Fresh, Simple And Delicious. No Shopping, No Planning! The Easy Way To Cook Dinner From Scratch. We prepare everything for you.</h4>
+                        <div class="howtoIcon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="howtoList">
+                            <h3>Email us your order</h3>
+                        </div>
+                    </div>
+                    <div class="pickupOrder howtoItem">
+                        <div class="howtoItemNumber">
+                            <h3>3.</h3>
+                        </div>
+                        <div class="howtoIcon">
+                            <i class="fas fa-dolly-flatbed"></i>
+                        </div>
+                        <div class="howtoList">
+                            <h3>PIckup your order</h3>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="menu">
+            <div id="menu" class="menu">
                 <div class="dinnerSectionOne mainDinnerContainer">
                     <div class="dinnerBannerOne dinnerBanner">
                         <img src="./assets/lasagna_banner_2570x400_jpeg.jpg" alt="">
@@ -90,15 +115,15 @@
                         <div class="dinner">
                             <div class="dinnerMain">
                                 <div class="dinnerName">
-                                    <h3>
+                                    <h4>
                                         Creamy Beef Lasagna
-                                    </h3>
+                                    </h4>
                                     
                                 </div>
                                 <div class="dinnerPrice">
-                                    <h3>
+                                    <h4>
                                         $32
-                                    </h3>
+                                    </h4>
                                 </div>
                             </div>
                             <div class="dinnerDetail">
@@ -110,15 +135,15 @@
                         <div class="dinner">
                             <div class="dinnerMain">
                                 <div class="dinnerName">
-                                    <h3>
+                                    <h4>
                                         Tex-Mex Lasagna
-                                    </h3>
+                                    </h4>
                                     
                                 </div>
                                 <div class="dinnerPrice">
-                                    <h3>
+                                    <h4>
                                         $32
-                                    </h3>
+                                    </h4>
                                 </div>
                             </div>
                             <div class="dinnerDetail">
@@ -130,35 +155,35 @@
                         <div class="dinner">
                             <div class="dinnerMain">
                                 <div class="dinnerName">
-                                    <h3>
+                                    <h4>
                                         Spicy Pizza Lasagna
-                                    </h3>
+                                    </h4>
                                     
                                 </div>
                                 <div class="dinnerPrice">
-                                    <h3>
+                                    <h4>
                                         $32
-                                    </h3>
+                                    </h4>
                                 </div>
                             </div>
                             <div class="dinnerDetail">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo? Conferam tecum, quam cuique verso rem subicias; Non est enim vitium in oratione solum.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo?
                                 </p>
                             </div>
                         </div>
                         <div class="dinner">
                             <div class="dinnerMain">
                                 <div class="dinnerName">
-                                    <h3>
+                                    <h4>
                                         Spicy Buffalo Chicken Penne
-                                    </h3>
+                                    </h4>
                                     
                                 </div>
                                 <div class="dinnerPrice">
-                                    <h3>
+                                    <h4>
                                         $28.50
-                                    </h3>
+                                    </h4>
                                 </div>
                             </div>
                             <div class="dinnerDetail">
@@ -170,35 +195,35 @@
                         <div class="dinner">
                             <div class="dinnerMain">
                                 <div class="dinnerName">
-                                    <h3>
+                                    <h4>
                                         Spicy Sausage Penne
-                                    </h3>
+                                    </h4>
                                     
                                 </div>
                                 <div class="dinnerPrice">
-                                    <h3>
+                                    <h4>
                                         $27.50
-                                    </h3>
+                                    </h4>
                                 </div>
                             </div>
                             <div class="dinnerDetail">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo? Conferam tecum, quam cuique verso rem subicias; Non est enim vitium in oratione solum.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo?
                                 </p>
                             </div>
                         </div>
                         <div class="dinner">
                             <div class="dinnerMain">
                                 <div class="dinnerName">
-                                    <h3>
+                                    <h4>
                                         Zesty Taco Meatloaf
-                                    </h3>
+                                    </h4>
                                     
                                 </div>
                                 <div class="dinnerPrice">
-                                    <h3>
+                                    <h4>
                                         $17.50
-                                    </h3>
+                                    </h4>
                                 </div>
                             </div>
                             <div class="dinnerDetail">
@@ -210,55 +235,55 @@
                         <div class="dinner">
                             <div class="dinnerMain">
                                 <div class="dinnerName">
-                                    <h3>
+                                    <h4>
                                         Buffalo Chicken Meatloaf
-                                    </h3>
+                                    </h4>
                                     
                                 </div>
                                 <div class="dinnerPrice">
-                                    <h3>
+                                    <h4>
                                         $17.50
-                                    </h3>
+                                    </h4>
                                 </div>
                             </div>
                             <div class="dinnerDetail">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo? Conferam tecum, quam cuique verso rem subicias; Non est enim vitium in oratione solum.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo?
                                 </p>
                             </div>
                         </div>
                         <div class="dinner">
                             <div class="dinnerMain">
                                 <div class="dinnerName">
-                                    <h3>
+                                    <h4>
                                         Taco Meatloaf
-                                    </h3>
+                                    </h4>
                                     
                                 </div>
                                 <div class="dinnerPrice">
-                                    <h3>
+                                    <h4>
                                         $17.50
-                                    </h3>
+                                    </h4>
                                 </div>
                             </div>
                             <div class="dinnerDetail">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo? Conferam tecum, quam cuique verso rem subicias; Non est enim vitium in oratione solum.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo?
                                 </p>
                             </div>
                         </div>
                         <div class="dinner">
                             <div class="dinnerMain">
                                 <div class="dinnerName">
-                                    <h3>
+                                    <h4>
                                         Chorizo Stuffed Cabbage Rolls
-                                    </h3>
+                                    </h4>
                                     
                                 </div>
                                 <div class="dinnerPrice">
-                                    <h3>
+                                    <h4>
                                         $12 / Half Dozen
-                                    </h3>
+                                    </h4>
                                 </div>
                             </div>
                             <div class="dinnerDetail">
@@ -270,15 +295,15 @@
                         <div class="dinner">
                             <div class="dinnerMain">
                                 <div class="dinnerName">
-                                    <h3>
+                                    <h4>
                                         Texas Style Baked Beans
-                                    </h3>
+                                    </h4>
                                     
                                 </div>
                                 <div class="dinnerPrice">
-                                    <h3>
+                                    <h4>
                                         $8.50
-                                    </h3>
+                                    </h4>
                                 </div>
                             </div>
                             <div class="dinnerDetail">
@@ -302,14 +327,14 @@
                         <div class="dinner">
                             <div class="dinnerMain">
                                 <div class="dinnerName">
-                                    <h3>
+                                    <h4>
                                         Granny Tisdale's Apple Crisp
-                                    </h3>
+                                    </h4>
                                 </div>
                                 <div class="dinnerPrice">
-                                    <h3>
+                                    <h4>
                                         $8.50
-                                    </h3>
+                                    </h4>
                                 </div>
                             </div>
                             <div class="dinnerDetail">
@@ -321,14 +346,14 @@
                         <div class="dinner">
                             <div class="dinnerMain">
                                 <div class="dinnerName">
-                                    <h3>
+                                    <h4>
                                         Captain Tisdale's Spiced Rumnog Cookies
-                                    </h3>
+                                    </h4>
                                 </div>
                                 <div class="dinnerPrice">
-                                    <h3>
+                                    <h4>
                                         $15 / Dozen
-                                    </h3>
+                                    </h4>
                                 </div>
                             </div>
                             <div class="dinnerDetail">
@@ -343,17 +368,17 @@
         </main>
         <footer>
             <div class="socialNav">
-                <div class="facebook">
+                <div class="socialItem facebook">
                     <a href="">
                         <i class="fab fa-facebook-square"></i>
                     </a>
                 </div>
-                <div class="twitter">
+                <div class="socialItem twitter">
                     <a href="">
                         <i class="fab fa-twitter-square"></i>
                     </a>
                 </div>
-                <div class="linkedin">
+                <div class="socialItem linkedin">
                     <a href="">
                         <i class="fab fa-linkedin"></i>
                     </a>
@@ -362,7 +387,10 @@
             <div class="footerNav">
                 <ul>
                     <li>
-                        <a href="">Home</a>
+                        <a href="#home" class="homeButton">Home</a>
+                    </li>
+                    <li>
+                        <a href="#menu" class="menuButton">Menu</a>
                     </li>
                     <li>
                         <a href="">Instructions</a>
@@ -373,7 +401,7 @@
                 </ul>
             </div>
             <div class="fin">
-                <h4>Made with ❤️ and 🍪 by Katie Tisdale. Copyright 2021.</h4>
+                <p>Made with ❤️ and 🍪 by Katie Tisdale. Copyright 2021.</p>
             </div>
         </footer>
     </div>
@@ -385,6 +413,8 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/acb50d146b.js" crossorigin="anonymous"></script>
+    <!-- Smoothscroll -->
+    <script src="https://cdn.statically.io/gh/kswedberg/jquery-smooth-scroll/3948290d/jquery.smooth-scroll.min.js"></script>
     <!-- Main js -->
     <script src="./scripts/main.js"></script>
 </body>
