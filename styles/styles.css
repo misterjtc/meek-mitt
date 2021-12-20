@@ -384,10 +384,20 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 75px;
 }
 header .logo {
   padding: 10px 0;
   margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .logo img {
   width: 190px;
@@ -396,8 +406,8 @@ header .mobileNavButton {
   display: none;
   position: absolute;
   z-index: 99999;
-  right: 5px;
-  top: 5px;
+  right: 10px;
+  top: 20px;
   width: 45px;
   height: 40px;
   -webkit-box-pack: center;
@@ -414,9 +424,7 @@ header .mobileNavButton .headerMobileNavLink i {
   font-size: 1.6rem;
 }
 header .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -475,13 +483,12 @@ header .nav .mobileList {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    align-items: flex-start;
   }
   body .mainWrapper #home .logo img {
     width: 145px;
@@ -548,7 +555,7 @@ body {
 .mainWrapper main .heroContainer .heroOverlay {
   position: absolute;
   z-index: 9998;
-  background: rgba(78, 66, 55, 0.3);
+  background: rgba(0, 0, 0, 0.45);
   top: 0;
   left: 0;
   right: 0;

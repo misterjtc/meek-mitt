@@ -41,16 +41,18 @@ meekMittApp.navMenu = function() {
         // If the header bar has class navCheck collapse it - else expand it
         if ( $('header').hasClass("navCheck") ) {
         // collapse nav
-          $('header').animate({height: "50px"}, 400, "linear");
+          $('header').animate({height: "75px"}, 400, "linear");
           $('header').removeClass('navCheck');
-          $(".mobileList").fadeOut( "fast", function() {
+          $('.logo').css("margin-top", "0px")
+          $(".mobileList, .nav").fadeOut( "fast", function() {
             // Animation complete
           });
         } else {
           // expand nav
           $('header').animate({height: "250px"}, 400, "linear");
           $('header').addClass('navCheck');
-          $('.mobileList').css("display", "flex");
+          $('.logo').css("margin-top", "15px")
+          $('.mobileList, .nav').css("display", "flex");
           $(".mobileList").fadeIn( "fast", function() {
             // Animation complete
           });
