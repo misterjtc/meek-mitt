@@ -424,7 +424,6 @@ header .mobileNavButton .headerMobileNavLink i {
   font-size: 1.6rem;
 }
 header .nav {
-  display: none;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -448,6 +447,7 @@ header .nav ul {
   list-style: none;
 }
 header .nav .deskList {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,6 +489,9 @@ header .nav .mobileList {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  body .mainWrapper #home .logo {
+    margin-top: 15px;
   }
   body .mainWrapper #home .logo img {
     width: 145px;
