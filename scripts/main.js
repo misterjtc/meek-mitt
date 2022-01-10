@@ -1,6 +1,5 @@
 // Main namespace object
 const meekMittApp = {};
-
 // Hero slider function
 meekMittApp.hero = function() {
     $('.heroMain').flickity({
@@ -12,7 +11,6 @@ meekMittApp.hero = function() {
         prevNextButtons: false
     });
 };
-
 // Smoothscroll function
 meekMittApp.smoothScroll = function () {
     // Smooth scroll to home
@@ -32,6 +30,26 @@ meekMittApp.smoothScroll = function () {
         return false;
       });
 };
+// Subscribe pop-up function
+meekMittApp.subscribe = function() {
+    $(".subscribe").on("click", function() {
+      event.preventDefault();
+      $('#mc_embed_signup').fadeIn();
+      $('#mc_embed_signup').addClass('popupCheck');
+      $('#mc_embed_signup').css("display", "flex");
+    });
+    $(".closeMe").on("click", function() {
+      event.preventDefault();
+      $('#mc_embed_signup').fadeOut();
+      $('#mc_embed_signup').removeClass('popupCheck');
+    });
+    if ( $('#mc_embed_signup').hasClass("popCheck") ) {
+      $(body).on("click", function() {
+        $('#mc_embed_signup').fadeOut();
+        $('#mc_embed_signup').removeClass('popupCheck');
+      })
+    }
+}
 // Mobile nav menu actuation
 meekMittApp.navMenu = function() {
     // On click of the mobile nav icon expand or collapse the nav
@@ -59,13 +77,12 @@ meekMittApp.navMenu = function() {
         }
       });
 }
-
-
 // Init function
 meekMittApp.init = function() {
     // fire up the hero
     meekMittApp.hero();
     meekMittApp.smoothScroll();
+    meekMittApp.subscribe();
     meekMittApp.navMenu();
 };
 

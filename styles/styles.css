@@ -271,7 +271,7 @@ html i {
   font-size: 2.5rem;
 }
 html input, html label, html textarea {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 html ul {
   padding: 0;
@@ -307,7 +307,7 @@ html .hideElement {
   html i {
     font-size: 1.2rem;
   }
-  html input, html label, html textarea, html button {
+  html input, html label, html textarea, html button, html label {
     font-size: 1.2rem;
   }
 }
@@ -360,7 +360,7 @@ html .hideElement {
     font-size: 1.8rem;
   }
   html input, html label, html textarea {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 1201px) {
@@ -557,7 +557,7 @@ body {
 }
 .mainWrapper main .heroContainer .heroOverlay {
   position: absolute;
-  z-index: 9998;
+  z-index: 9997;
   background: rgba(0, 0, 0, 0.45);
   top: 0;
   left: 0;
@@ -579,7 +579,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 9999;
+  z-index: 9998;
 }
 .mainWrapper main .heroContainer .heroText .heroTextContainer {
   display: -webkit-box;
@@ -610,7 +610,7 @@ body {
 .mainWrapper main .heroContainer .heroText .heroTextContainer h2 span {
   color: cornflowerblue;
 }
-.mainWrapper main .heroContainer .heroText .heroTextContainer .subscribe {
+.mainWrapper main .heroContainer .heroText .heroTextContainer .siteButton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -618,7 +618,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.mainWrapper main .heroContainer .heroText .heroTextContainer .subscribe a {
+.mainWrapper main .heroContainer .heroText .heroTextContainer .siteButton a {
   background: cornflowerblue;
   padding: 10px 20px;
   border-radius: 15px;
@@ -626,7 +626,7 @@ body {
   -webkit-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
-.mainWrapper main .heroContainer .heroText .heroTextContainer .subscribe a:hover {
+.mainWrapper main .heroContainer .heroText .heroTextContainer .siteButton a:hover {
   color: #092049;
 }
 .mainWrapper main .heroContainer .heroMain {
@@ -994,5 +994,83 @@ footer .fin p {
 @media (min-width: 577px) and (max-width: 768px) {
   .fin h4 {
     font-size: 1.2rem;
+  }
+}
+#mc_embed_signup {
+  display: none;
+  background: white;
+  position: fixed;
+  top: 25%;
+  left: 41%;
+  z-index: 9999;
+  width: 18%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+}
+#mc_embed_signup .closeMe {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+#mc_embed_signup #mc-embedded-subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+#mc_embed_signup #mc-embedded-subscribe-form #mc_embed_signup_scroll h2 {
+  margin: 25px 0;
+  font-size: 3.5rem;
+}
+#mc_embed_signup #mc-embedded-subscribe-form #mc_embed_signup_scroll .mc-field-group {
+  margin: 10px 0;
+}
+#mc_embed_signup #mc-embedded-subscribe-form #mc_embed_signup_scroll .optionalParent .clear.foot {
+  margin: 25px 0;
+}
+#mc_embed_signup #mc-embedded-subscribe-form #mc_embed_signup_scroll .optionalParent .clear.foot .subscribeFormButton {
+  background: cornflowerblue;
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: white;
+  -webkit-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+  border: none;
+}
+#mc_embed_signup #mc-embedded-subscribe-form #mc_embed_signup_scroll .optionalParent .clear.foot .subscribeFormButton:hover {
+  color: #092049;
+}
+
+@media (min-width: 1px) and (max-width: 768px) {
+  main #mc_embed_signup {
+    width: 70%;
+    left: 15%;
+    top: 30%;
+  }
+  main #mc_embed_signup #mc-embedded-subscribe-form {
+    width: 80%;
+  }
+  main #mc_embed_signup #mc-embedded-subscribe-form #mc_embed_signup_scroll {
+    width: 90%;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  main #mc_embed_signup {
+    width: 30%;
+    left: 35%;
+  }
+  main #mc_embed_signup #mc-embedded-subscribe-form {
+    width: 77%;
   }
 }

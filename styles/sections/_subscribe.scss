@@ -1,0 +1,93 @@
+#mc_embed_signup {
+    display: none;
+    background: white;
+    position: fixed;
+    top: 25%;
+    left: 41%;
+    z-index: 9999;
+    width: 18%;
+    // height: 500px;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    .closeMe {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+    #mc-embedded-subscribe-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        #mc_embed_signup_scroll {
+            h2 {
+                margin: 25px 0;
+                font-size: 3.5rem;
+            }
+            .mc-field-group {
+                margin: 10px 0;
+            }
+            .optionalParent .clear.foot {
+                margin: 25px 0;
+                .subscribeFormButton {
+                    background: $linkBackground;
+                    padding: 10px 20px;
+                    border-radius: 15px;
+                    color: white;
+                    transition: color 0.3s ease-in;
+                    border: none;
+                    &:hover {
+                        color: darken($linkBackground, 50%)
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: $sm) { 
+    // main #mc_embed_signup {
+    //     width: 70%;
+    //     left: 15%;
+    //     top: 30%;
+    //     #mc-embedded-subscribe-form {
+    //         width: 80%;
+    //         #mc_embed_signup_scroll {
+    //             width: 90%;
+    //         }
+    //     }
+
+    // }
+}
+@media (min-width: 1px) and (max-width: $md) {
+    main #mc_embed_signup {
+        width: 70%;
+        left: 15%;
+        top: 30%;
+        #mc-embedded-subscribe-form {
+            width: 80%;
+            #mc_embed_signup_scroll {
+                width: 90%;
+            }
+        }
+    }
+}
+@media (min-width: $sm + 1px) and (max-width: $md) {
+
+}
+@media (min-width: $md + 1px) and (max-width: $lg) {
+
+}
+@media (min-width: $lg + 1px) and (max-width: $xl) {
+    main #mc_embed_signup {
+        width: 30%;
+        left: 35%;
+        #mc-embedded-subscribe-form {
+            width: 77%;
+        }
+    }
+}
+@media (min-width: $xl + 1px) {
+
+}
