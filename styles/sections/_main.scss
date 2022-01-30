@@ -8,7 +8,20 @@ body {
     // position: fixed;
     background-attachment: fixed;
 }
-
+.siteButton {
+    display: flex;
+    justify-content: center;
+    a {
+        background: $linkBackground;
+        padding: 10px 20px;
+        border-radius: 15px;
+        color: white;
+        transition: color 0.3s ease-in;
+        &:hover {
+            color: darken($linkBackground, 50%)
+        }
+    }
+}
 .mainWrapper {
     width: 60%;
     display: flex;
@@ -62,20 +75,6 @@ body {
                             color: $linkBackground;
                         }
     
-                    }
-                    .siteButton {
-                        display: flex;
-                        justify-content: center;
-                        a {
-                            background: $linkBackground;
-                            padding: 10px 20px;
-                            border-radius: 15px;
-                            color: white;
-                            transition: color 0.3s ease-in;
-                            &:hover {
-                                color: darken($linkBackground, 50%)
-                            }
-                        }
                     }
                 }
             }
@@ -190,42 +189,73 @@ body {
                         }
                     }
                 }
-                .dinnerItems {
+                .dinnerContainer {
                     // height: 600px;
                     background: white;
                     display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
+                    flex-direction: column;
                     justify-content: space-evenly;
-                    .dinner {
-                        width: 45%;
-                        margin: 25px 0;
-                        .dinnerMain {
-                            margin-bottom: 10px;
-                            display: flex;
-                            justify-content: space-between;
-                            .dinnerName {
-                                width: 60%;
+                    .dinnerItems {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+                        .dinner {
+                            width: 45%;
+                            margin: 25px 0;
+                            .dinnerMain {
+                                margin-bottom: 10px;
+                                display: flex;
+                                justify-content: space-between;
+                                .dinnerName {
+                                    width: 60%;
+                                }
+                                h4 {
+                                    font-weight: 700;
+                                    // font-size: 1.8rem;
+                                }
+                                .dinnerPrice {
+                                    width: 35%;
+                                    h4{
+                                        text-align: right;
+                                    }
+                                }
                             }
-                            h4 {
-                                font-weight: 700;
-                                // font-size: 1.8rem;
-                            }
-                            .dinnerPrice {
-                                width: 35%;
-                                h4{
-                                    text-align: right;
+                            .dinnerDetail {
+                                p {
+                                    // font-size: 1.2rem;
+                                    color: #565656
                                 }
                             }
                         }
-                        .dinnerDetail {
-                            p {
-                                // font-size: 1.2rem;
-                                color: #565656
-                            }
+                    }
+                    .splitCookieContainer {
+                        display: flex;
+                        flex-direction: row;
+                        .cookieSplitter {
+                            width: 50%;
+                        }
+                        .dinnerItems .dinner {
+                            width: 90%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
                         }
                     }
+                    .order {
+                        margin-bottom: 35px;
+                    }
                 }
+                // .dinnerThreeMain {
+                //     display: flex;
+                //     flex-direction: row;
+                //     .standardCookies {
+                //         width: 50%;
+                //     }
+                //     .specialtyCookies {
+                //         width: 50%;
+                //     }
+                // }
             }
         }
     }
